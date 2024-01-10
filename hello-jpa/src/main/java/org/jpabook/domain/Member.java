@@ -2,7 +2,7 @@ package org.jpabook.domain;
 
 import javax.persistence.*;
 
-@Entity
+//@Entity
 public class Member {
 
     @Id @GeneratedValue
