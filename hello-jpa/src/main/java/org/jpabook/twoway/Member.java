@@ -1,8 +1,8 @@
-package org.jpabook.oneway;
+package org.jpabook.twoway;
 
 import javax.persistence.*;
 
-//@Entity
+@Entity
 public class Member {
 
     @Id @GeneratedValue
@@ -10,9 +10,6 @@ public class Member {
 
     @Column(name = "username")
     private String name;
-
-    //@Column(name = "team_id")
-    //private Long teamId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "team_id")
@@ -38,7 +35,8 @@ public class Member {
         return team;
     }
 
-    public void setTeam(Team team) {
+    public void changeTeam(Team team) {
         this.team = team;
+        team.getMembers().add(this);
     }
 }
