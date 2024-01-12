@@ -2,6 +2,7 @@ package org.jpabook.twoway;
 
 import javax.persistence.*;
 
+/*
 @Entity
 public class Member {
 
@@ -40,3 +41,6 @@ public class Member {
         team.getMembers().add(this);
     }
 }
+
+
+ */

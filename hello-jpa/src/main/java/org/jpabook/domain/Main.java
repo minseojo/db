@@ -1,4 +1,4 @@
-package org.jpabook;
+package org.jpabook.domain;
 
 import org.jpabook.domain.Member;
 
